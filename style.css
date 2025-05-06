@@ -1,0 +1,152 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.feedback {
+    display: block;
+    font-size: 14px;
+    color: #ff4444;
+    margin-top: 5px;
+}
+
+.feedback.success {
+    color: #4CAF50;
+    animation: fadeIn 0.3s ease;
+}
+
+.feedback.error {
+    color: #ff4444;
+    animation: fadeIn 0.3s ease;
+}
+
+.image-gallery {
+    text-align: center;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    animation: bounce 0.5s ease;
+}
+
+/* Animation keyframes */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Typing Game Styles */
+.typing-section {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#keyDisplay {
+    font-size: 48px;
+    color: #4CAF50;
+    margin: 20px 0;
+    min-height: 60px;
+}
+
+/* Accordion Styles */
+.accordion-item {
+    margin-bottom: 5px;
+}
+
+/* Enhance Accordion Styles */
+.accordion-header {
+    width: 100%;
+    text-align: left;
+    padding: 15px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.accordion-header:after {
+    content: '+';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.accordion-header:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.accordion-content {
+    background-color: #f9f9f9;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 10px;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-content.active {
+    padding: 15px;
+    max-height: 200px;
+    border-left: 2px solid #4CAF50;
+}
+
+.accordion-header.active:after {
+    content: '-';
+}
